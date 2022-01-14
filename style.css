@@ -235,10 +235,11 @@ background-position: right;
 background-repeat: no-repeat;
 background-size: contain;
 height:100vh;
+background-attachment: fixed;
 }
 
 header{
-display: flex;
+
 justify-content: space-between;
 align-items: center;
 
@@ -916,6 +917,14 @@ top: 256px;
 @media (max-width: 480px){
 /*F1 container*/
 
+.header-container{
+    background: rgba(254, 180, 211, 0.84);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    }
+
 h1{
 
 height: 30px;
@@ -935,12 +944,13 @@ text-align: center;
 p{
     
     display: flex;
-    font-size: 26px;
+    font-size: 6vw;
+    font-weight: bold;
     top: 589px;
-    line-height: 26px;
-   width: 220px;
+    line-height: 30px;
+   width: 360px;
     align-items: center;
-    left: 39px;
+    left: 35px;
     height: 106px;
 }
 .hero-image{
@@ -961,9 +971,9 @@ top: 85px;
     display: none;
 }
 .btn-1{
-    left: 280px;
+    left: 150px;
     right: auto;
-    top: 85%;
+    top: 90%;
     width: auto;
     padding-right: 20px;
     font-size: 15px;
@@ -974,12 +984,12 @@ top: 85px;
 #abt{
 height: 30px;
 width: auto;
-top: 800px;
+top: 890px;
 font-size: 8vw;
 font-weight: bold;
 }
 .circle3{
-    position: absolute;
+position: absolute;
 width: 160px;
 height: 150px;
 left: auto;
@@ -990,12 +1000,12 @@ top: 1054px;
 }
 .ball-image{
 left: auto;
-top: 860px;
+top: 880px;
 
 }
 .ball-image1{
     left: 180px ;
-    top: 1250px;
+    top: 1450px;
     width: 90px;
     
     
@@ -1009,10 +1019,10 @@ width: auto;
 height: 280px;
 left: 20px;
 right: 20px;
-top: 950px;
+top: 1100px;
 line-height: 30px;
 font-weight: bold;
-font-size: 1.1rem;
+font-size: 1.5rem;
 align-items: center;
 }
 .polygon{
@@ -1028,7 +1038,7 @@ align-items: center;
 width: 74px;
 height: 25px;
 left: 170px;
-top: 1580px;
+top: 1720px;
 font-weight: bold;
 font-size: 8vw;
 text-align: center;
@@ -1044,7 +1054,7 @@ width: auto;
 height: 161px;
 left: 40px;
 right: 40px;
-top: 1840px;
+top: 1880px;
 font-weight: bold;
 font-size: 4.5vw;
 line-height: 26px;
@@ -1064,6 +1074,7 @@ align-items: center;
 }
 .calender{
 left: 125px;
+top: 1780px;
 }
 .book{
    display: none;

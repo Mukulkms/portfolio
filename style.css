@@ -369,7 +369,7 @@ p{
 #contact{
   display: flex;
   flex-direction: row;
-  background-color:rgba(3, 190, 168, 0.623);
+  background-color:rgb(116, 213, 238);
   background-repeat: no-repeat;
   flex-direction: row;
   background-size: contain;

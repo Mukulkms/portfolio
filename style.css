@@ -179,15 +179,14 @@
     }
     
     .logo{
-    width: 48px;
-    height: 48px;
-    margin-left: 50px;
+    width: 100%;
     top: 10px;
+    margin-left: 80%;
+    justify-content:space-evenly;
     font-family:'Major Mono Display', monospace;
-    font-style: normal;
+    font-style: bolder;
     font-size: 55px;
     display: flex;
-    align-items: center;
     text-decoration: none;
     color: #383FF4;
     text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
@@ -286,9 +285,31 @@ p{
     font-family: poppins;
     width: 600px;
 }
-span{
-    color: #5D28F4;
+.s1{
+  color: #5D28F4;
+  font-family: montserrat;
+ animation: text 3s 1;
+ width: 100%;
 }
+
+@keyframes text {
+  0%{
+      
+      margin-bottom: 0px;
+  }
+
+  30%{
+      letter-spacing: 2px;
+      
+  }
+
+  85%{
+      letter-spacing: 8px;
+      
+  }
+}
+
+
 .image1{
   width: 100%;
   height: auto;
@@ -341,6 +362,7 @@ span{
   
   
 }
+
 #left-col1{
   padding: 2%;
   margin-right: 2%;
@@ -359,7 +381,7 @@ span{
 .p1{
   font-size: 1.5vw;
   line-height: 46px;
-
+  padding-bottom: 10%;
   width: 700px;
   text-align: justify;
   font-family: Montserrat;
@@ -413,12 +435,29 @@ span{
   line-height: 46px;
   margin-top: 10%;
   padding: 0%;
+
   width: 700px;
   text-align: justify;
   font-family: Montserrat;
 
 }
 
+.btn-2{
+  border-radius: 22px;
+  margin-left:40%;
+  padding:  10px;
+  font-family: poppins;
+  background-color: rgb(176, 70, 238);
+  color: white;
+  justify-content: center;
+  text-align: center;
+  transition: 400ms;
+
+}
+.btn-2:hover{
+  color: rgb(2, 2, 2);
+  background-color: rgb(47, 255, 168);
+}
 /*********************** container4*************************/
 
 #contact{
@@ -677,15 +716,15 @@ textarea {
   }
   .left-col{
     width: 100%;
-    padding: 0 15%;
-    
+    padding: 0 8% ;
   }
   .right-col{
   text-align: center; 
   }
   h1{
-    font-size: 3em;
+    font-size: 4em;
     padding: 0;
+    
     
   }
   p{
@@ -696,7 +735,7 @@ textarea {
     padding: 0 ;
   }
   .image1{
-    width: 50%;
+    width: 70%;
     text-align: center;
   
   }
@@ -709,7 +748,7 @@ textarea {
     flex-direction: column;
   }
   #left-col1{
-    width: 50%;
+    width: 70%;
     justify-content: center;
     
   }
@@ -723,14 +762,14 @@ textarea {
     justify-content: center;
   }
   .p1{
-    font-size: 2.5vw;
+    font-size: 4vw;
     width: 80%;
     padding-top: 10%;
     margin-left: 9%;
     
   }
   .image2{
-  margin-left: 50%;
+  margin-left: 20%;
     
   }
 
@@ -752,9 +791,8 @@ textarea {
     width: 50%;
   }
   .p2{
-    font-size: 2.5vw;
+    font-size: 4vw;
     width: 80%;
-    
     margin-left: 9%;
     
   }
@@ -766,7 +804,7 @@ textarea {
  .image3{
    width: auto;
    margin-left: 50%;;
-   height: 20em;
+   height: 25em;
  
  }
 /**********4th cont*********/
@@ -811,12 +849,18 @@ textarea {
 @media (max-width: 600px){
   header{
     flex-direction: column;
+   
   }
   
   h1{
-    font-size: 8vw;
+    font-size: 10vw;
+    
     padding: 0;
     
+  }
+  p{
+    font-size: 6vw;
+    line-height: 1.8em;
   }
   .circle2{
     display: none;
@@ -908,3 +952,50 @@ textarea {
   width: 45px;
 }
 }
+
+  /************media**********/
+  @media (max-width: 480px){
+  
+  h1{
+    font-size: 10vw;
+  }
+  p{
+    font-size: 6vw;
+    line-height: 1.8em;
+  }
+  .circle2{
+    display: none;
+  }
+  
+  /*********2nd cont********/
+
+  .heading-2{
+   font-size: 2.5rem;
+  }
+  .p1{
+    font-size: 1em;
+    line-height: 1.8em;
+    margin-bottom: 2em;
+  }
+  
+
+/***3rd cont********/
+  
+  .p2{
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+
+ 
+/**********4th cont*********/
+
+.heading-4{
+  font-size: 2.5rem;
+}
+.heading-5{
+  padding: 0;
+  width: 100%;
+  font-size: 3rem;
+
+}
+  }
